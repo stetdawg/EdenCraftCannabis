@@ -87,7 +87,6 @@ const Gate = (params) => {
   const overlay = document.getElementById("main")
 overlay.classList.remove("disable")
   const overflow = document.documentElement
-  overflow.style.overflowY = "scroll";
 
 
 

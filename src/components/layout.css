@@ -47,7 +47,6 @@ html {
   font-size: var(--font-md);
   line-height: var(--line-height-normal);
   overflow-x: hidden;
-  overflow-y: hidden;
   text-align: center;
   
 }
@@ -55,12 +54,14 @@ html {
 #main.disable:after
 {
     content: '';
-    position: absolute;
+    position: fixed;
     left:0;
     right:0;
     top:0;
     bottom:0;
-    z-index:998;    background: #595b5c67;
+    z-index:998;    
+    background: #595b5c67;
+    pointer-events: none;
 
 }
 div{
@@ -233,7 +234,7 @@ footer{
 }
 .ageVerification{
   bottom: 0;
-  position: absolute;
+  position: sticky;
   /* height: -webkit-fit-content; */
   height: -moz-fit-content;
   height: fit-content;
