@@ -1,14 +1,15 @@
 .list {
   display: grid;
+  position: relative; 
   margin: 0;
   /* https://css-tricks.com/responsive-layouts-fewer-media-queries/ */
   --w: 280px;
   --n: 2;
   gap: var(--size-gap);
-  grid-template-columns: repeat(
+  justify-content: end;
+  grid-template-columns: 
     auto-fit,
-    minmax(max(var(--w), 100%/ (var(--n) + 1) + 0.1%), 1fr)
-  );
+    minmax(max(var(--w), 100%/ (var(--n) + 1) + 0.1%), 1fr);
   margin-bottom: var(--size-gap);
   margin-top: var(--size-gap);
 }
@@ -44,8 +45,10 @@
   margin-top: var(--space-1);
 }
 
-.textCenter {
+.imageMid {
   text-align: center;
+  width: auto;
+  overflow: visible;
 }
 
 .intro {
