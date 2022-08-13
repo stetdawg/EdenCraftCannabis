@@ -61,8 +61,6 @@ html {
     bottom:0;
     z-index:998;    
     background: #595b5c67;
-    pointer-events: none;
-
 }
 div{
   height: fit-content
