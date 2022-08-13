@@ -241,7 +241,7 @@ const IndexPage = () => (
     <img 
       className={`icon`} 
       alt='Hero 9' 
-      heightww={63} 
+      height={63} 
       style={{ 
         position: `relative`,
         alignSelf: 'center',
@@ -256,7 +256,7 @@ const IndexPage = () => (
     <img 
       className={`locationsHeader`} 
       alt='Hero 8' 
-      heightww={64} 
+      height={64} 
       style={{ 
         position: `relative`,
         alignSelf:`center`,
@@ -273,7 +273,7 @@ const IndexPage = () => (
     <img 
       className={`locations`} 
       alt='Hero 10' 
-      heightww={64} 
+      height={64} 
       style={{ 
         position: `relative`,
         alignSelf: `flex-start`,
@@ -289,7 +289,7 @@ const IndexPage = () => (
     <img 
       className={`smile`} 
       alt='Hero 11' 
-      heightww={1407} 
+      height={1407} 
       style={{ 
         position: `relative`,
         justifySelf:`flex-start`,
@@ -306,7 +306,7 @@ const IndexPage = () => (
     <img 
       className={`contactButton`} 
       alt='Hero 12' 
-      heightww={140} 
+      height={140} 
       style={{ 
         position: `relative`,
         maxWidth: `100%`,

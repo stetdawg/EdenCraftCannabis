@@ -99,7 +99,7 @@ const Layout = ({ children }) => {
                 src={keepInTouch}
                 alt="Email header"
                 height={29}
-                style={{gridArea:`1/2`, height:`auto`, margin: `0`, float: `left`,}}
+                style={{gridArea:`1/2`, height:29, margin: `0`, float: `left`,}}
             />
             <img
                 src={inbox}
