@@ -15,7 +15,8 @@ import img9 from "../images/logos/EDEN_HOMEPAGE_JULY_20_0006s_0000_ICON.png"
 import img10 from "../images/EDEN_HOMEPAGE_JULY_20_0001s_0000_location-blob.png";
 import img11 from "../images/EDEN_HOMEPAGE_JULY_20_0003s_0000_smile-photo.png";
 import img12 from "../images/EDEN_HOMEPAGE_JULY_20_0005s_0000_CONTACT-US.png";
-import ageGateimg from '../images/Background/EDEN_HOMEPAGE_JULY_20_0000s_0001_21_POPUP.png';
+import ageGateimg from '../images/Background/21_POPUP.png';
+import yesButton from '../images/yes.png';
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -75,7 +76,7 @@ const keepInTouch = [
     text: "Keep your inbox happy, filled with event invitations, new product releases, and occasional sales.",
   },
   {
-    //TODO FORM
+       //TODO FORM
   }
 ]
 
@@ -87,25 +88,19 @@ const Gate = (params) => {
   const overlay = document.getElementById("main")
 overlay.classList.remove("disable")
   const overflow = document.documentElement
-
-
-
 }
 
 
 const IndexPage = () => (
-  
-
   <Layout>
     <Seo title="Home" />
 
     <div id="ageGate" className={`ageVerification`}>
             <img src={ageGateimg} alt="Age Gate 21 years or older" />
             
-                  <button id="yesButton" onClick={Gate}
-                    />
-                    <a id="noButton" href="https://www.google.com">
-                     
+                <button id="yesButton" ><img src={yesButton} alt="Yes to Enter" onClick={Gate} ></img></button>
+                    <a id="noButton" href="https://www.google.com" style={{fontFamily:`acumin-pro-extra-condensed`, fontWeight:`400`, fontStyle:`uppercase`, color:`#a8b2da`, fontSize:`xx-large`, textTransform:`capitalize`, letterSpacing: `.5em`,  transform: `translate(7%, 0)`,}}>
+                     <></>NO NOT YET...
                   </a>
                     </div>
         
@@ -156,7 +151,7 @@ const IndexPage = () => (
       style={{ 
         position: `relative`,
         justifySelf: `center`,
-        transform: `translate(-100%, -50%)`,
+        transform: `translate(-100%, 100%)`,
         width: `20%`,
         height: `auto`,
         top: `0`,
@@ -175,7 +170,7 @@ const IndexPage = () => (
       height={328} 
       style={{ 
         position: `relative`,
-        width: `20vw`,
+        width: `25vw`,
         height: `auto`,
         gridArea: `1/1/1/1`,
 
@@ -188,12 +183,12 @@ const IndexPage = () => (
       height={47} 
       style={{ 
         position: `absolute`,
-        width: `10vw`,
+        width: `15vw`,
         height: `auto`,
         gridArea: `1/1/1/1`,
         // top: `50%`,
         // left: `50%`,
-        transform: `translate(50%, 290%)`,
+        transform: `translate(35%, 240%)`,
         }} 
       src={img6}>
     </img>
@@ -202,7 +197,7 @@ const IndexPage = () => (
   </div>
 
 
-  <div id="box3" style={{display:"grid", gridTemplateColumns:`auto auto`, gridAutoRows:`auto`,alignItems:`baseline`, justifyItems:`center`}}>
+  <div id="box3" style={{display:"grid", gridTemplateColumns:`auto auto`, gridAutoRows:`auto`,alignItems:`flex-end`,WebkitAlignItems:`flex-end`, justifyItems:`center`,marginTop: `10%`}}>
  
     <img 
       className={`rolling`} 
@@ -217,11 +212,11 @@ const IndexPage = () => (
         left:`0`,
         float:`left`,
         zIndex:`501`,
-        transform:` translate(0%, -60%)`,
+        transform:` translate(0%, -70%)`,
 
     }} 
       src={img2}/>
-   <div style={{width:`100%`, alignSelf: `baseline`, gridArea: `1/1`, display:`flex`, flexDirection:`column`,
+   <div style={{width:`100%`, alignSelf: `flex-start`, WebkitAlignSelf: `flex-start`, gridArea: `1/1`, display:`flex`, flexDirection:`column`,
 
 }}>
     <img 
@@ -232,7 +227,7 @@ const IndexPage = () => (
         position: `relative`,
         height: `auto`,
         padding: `0 10%`,
-        width: '100%',
+        width: '80%',
         top:`0`, 
         zIndex:`499`,
           }} 
@@ -244,6 +239,8 @@ const IndexPage = () => (
       style={{ 
         position: `relative`,
         alignSelf: 'center',
+        WebkitAlignSelf: `center`,
+        transform: `translate(-100%, 50%)`,
         maxWidth: `10%`,
         height: `auto`,
         zIndex:`503`,
@@ -259,6 +256,7 @@ const IndexPage = () => (
       style={{ 
         position: `relative`,
         alignSelf:`center`,
+        WebkitAlignSelf: `center`,
         width: `50%`,
         height: `auto`,
         top:`0`, 
@@ -276,9 +274,10 @@ const IndexPage = () => (
       style={{ 
         position: `relative`,
         alignSelf: `flex-start`,
-        maxWidth: `60%`,
+        WebkitAlignSelf: `flex-start`,
+        maxWidth: `50%`,
         height: `auto`,
-        transform: `translate(0%,-30%)`,
+        transform: `translate(0%,-20%)`,
         top:`0`, 
         gridArea:`2/2`,
         zIndex:`504`,
@@ -311,21 +310,12 @@ const IndexPage = () => (
         maxWidth: `100%`,
         height: `auto`,
         alignSelf:`flex-end`,
+        WebkitAlignSelf: `flex-end`,
         top:`0`, 
         zIndex:`505`,
           }} 
       src={img12}/></a>
-
-
-
-
   </div>
-
-
-
-
-
-
  </Layout>
 )
 

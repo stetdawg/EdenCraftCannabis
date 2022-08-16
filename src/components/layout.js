@@ -12,9 +12,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import edenlogo from "../images/logos/EDEN_HOMEPAGE_JULY_20_0002s_0001_ICON.png"
 import keepInTouch from "../images/EDEN_HOMEPAGE_JULY_20_0002s_0005_Keep-in-Touch.png";
 import inbox from "../images/EDEN_HOMEPAGE_JULY_20_0002s_0004_Keep-your-inbox-happy-filled-with-event-invitations,-new-produc.png";
-import youtube from "../images/logos/youtube_social_icon_white.png";
+import youtube from "../images/logos/youtube.png";
 import instagram from "../images/logos/Instagram_Glyph_White.png";
-import linkedIn from "../images/logos/LI-In-Bug.png";
+import linkedIn from "../images/logos/linked in.png";
 import twitter from "../images/logos/2021 Twitter logo - white.png";
 import facebook from "../images/logos/f_logo_RGB-White_144.png";
 import Header from "./header"
@@ -69,7 +69,12 @@ const Layout = ({ children }) => {
              gridTemplateColumns: `repeat(2, 1fr)`,
              gridTemplateRows: `repeat(3, auto)`,
              padding: `3vh 10%`,
-             columnGap: `10%`,    
+             fontFamily:`Arial Rounded MT Bold, sans-serif`,
+              fontWeight: `700`, 
+              fontStyle: `normal`,
+              lineHeight:`initial`,
+              
+
           }}
         >
 
@@ -78,7 +83,7 @@ const Layout = ({ children }) => {
           src={edenlogo}
           alt="Eden Logo"
           height={65}
-          style={{ margin: 0,  gridArea: `1/1`, width: `auto`, height:`30%`, alignSelf:`center`, }}
+          style={{ margin: 0,  gridArea: `1/1`, width: `10%`, height:`auto`, alignSelf:`center`, }}
         />
         <div style={{gridArea:`1/1`, display:`flex`, flexDirection:`column`, alignSelf:`center`, textAlign:`initial`, justifySelf:`baseline`, transform: `translate(100%, 0%)`,}}>
         {moreLinks.map((link, i) => (
@@ -89,24 +94,22 @@ const Layout = ({ children }) => {
         ))}
         </div>
 
-        <div style={{gridArea:`2/1`, textAlign:`initial`, padding: `0 1em`, margin: `10% 0`,}}>
+        <div style={{gridArea:`2/1`,paddingRight:`10%`, textAlign:`initial`, fontSize:`smaller` }}>
             LICENSE NUMBER HERE{` `}<br/>
             Eden Craft Cannabis Terms & Conditions & Privacy Policy<br/>
         </div> 
           
-        <div style={{alignSelf:`center`,display: "flex", flexDirection:"column", justifySelf: 'flex-start', padding: '10% 10% 0 0'}}>
-            <img
-                src={keepInTouch}
-                alt="Email header"
-                height={29}
-                style={{gridArea:`1/2`, height:29, margin: `0`, float: `left`,}}
-            />
-            <img
-                src={inbox}
-                alt="Inbox Description, Enter email."
-                height={41}
-                style={{height:`auto`,margin: `10% 0`,}}
-              />
+        <div style={{alignItems:`baseline`, WebkitAlignItems:`baseline`,display: "flex", flexDirection:"column", justifySelf: 'flex-start', padding: '10% 10% 0 0',}}>
+            <h1
+                style={{gridArea:`1/2`, height:29, margin: `0 0 5% 0`, float: `left`, alignItems:`baseline`, WebkitAlignItems: `baseline`}}
+            >
+                Keep In Touch
+          </h1>
+            <p
+                style={{height:`auto`,  fontFamily:`Arial Rounded MT Bold, sans-serif`, fontSize: `80%`, textAlign: `-webkit-left`,}}
+              >
+                Keep your inbox happy filled with event invitations, new product releases, and occasional sales.
+                </p>
           </div>
             
         <div>
@@ -116,7 +119,7 @@ const Layout = ({ children }) => {
         <div id="socialFooter" style={{
             display: 'flex',
             gridColumn: '1 / 3',
-            width: '100%',
+            width: '50%',
             height: 'fit-content',
             justifySelf: 'center',
             justifyContent: 'space-evenly'}}>
@@ -124,7 +127,6 @@ const Layout = ({ children }) => {
               src={youtube}
               alt=""
               height={25}
-              style={{}}
 
             /> </a>    
             <a href="/"><img

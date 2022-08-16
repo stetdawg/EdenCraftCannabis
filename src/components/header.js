@@ -8,7 +8,7 @@ const Links = [
   {text:"Home", url: "/"},
   {text:"Menu", url: "/"},
   {text:"Shop", url: "/"},
-  {text:<img alt='Eden logo' height={65} style={{ margin: 0 }} src={edenlogo} />, url: "/"},
+  {text:<img alt='Eden logo' height={50} style={{ margin: 0 }} src={edenlogo} />, url: "/"},
   {text:"Club", url: "/"},
   {text:"About", url: "/"},
   {text:"More", url: "/"},
@@ -21,15 +21,16 @@ const Header = ({ siteTitle }) => (
   <header
    id="desktopHeader" style={{
       margin: `0 auto`,
-      padding: `var(--space-4) var(--size-gutter)`,
       alignItems: `center`,
+      WebkitAlignItems: `center`,
       justifyContent: `space-between`,
+      WebkitJustifyContent: `space-between`,
       backgroundColor:`#3E3E3E`, 
-      fontSize: `1.75553434vh`,
+      fontSize: `2.3vh`,
 
     }}
   >
-<div id="navBar" style={{listStyleType: `none`, display:`flex`, justifyContent:`space-around`, alignItems:`flex-end`}}>
+<div id="navBar" style={{listStyleType: `none`, display:`flex`, justifyContent:`space-around`, WebkitJustifyContent: `space-around`,alignItems:`center`, WebkitAlignItems:`center`}}>
 
 
   {Links.map((link, i) => (
@@ -40,7 +41,7 @@ const Header = ({ siteTitle }) => (
     <Link
       to="/"
       style={{
-        fontSize: `var(--font-sm)`,
+
         textDecoration: `none`,
       }}
     >

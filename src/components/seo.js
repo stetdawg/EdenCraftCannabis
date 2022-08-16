@@ -38,6 +38,8 @@ function Seo({ description, title, children }) {
       <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
+      <link rel="stylesheet" href="https://use.typekit.net/mvz3ndk.css"/>
+      <link rel="stylesheet" href="https://use.typekit.net/mvz3ndk.css"/>
       {children}
     </>
   )

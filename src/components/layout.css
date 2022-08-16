@@ -83,10 +83,12 @@ div{
   .imageWrapper > div{
     height: 3vh
   }
-
+ 
   /* .rolling{
     transform: translate(0%, -60%)
   } */
+
+ 
 } 
 @media only screen and (min-width: 800px) and (max-width: 1499px){
 html{
@@ -110,12 +112,9 @@ html{
   #box1 {
     margin-top: 15vh
   }
-
-  #box3 {
-    margin-top: 10%
-  }
   .copyText{
     align-self: center;
+    -webkit-align-self: center;
   }
   .smoking{
     width: 60vw
@@ -183,20 +182,18 @@ p {
   /* margin-bottom: var(--space-4); */
 }
 
-  .imageWrapper{
+.imageWrapper{
     margin: auto var(--size-gutter);
   }
 
-
 footer{
   color: #F6F6EF;
-
 }
 .smoking{
   max-width: 60vw
 }
 .rolling{
-  width: 50vw
+  width: 100%;
 }
 #fname{
   color: rgba(0,0,0,.87);
@@ -207,6 +204,7 @@ footer{
   text-transform: uppercase;
   text-align: start;
   align-self: flex-end;
+  -webkit-align-self: flex-end;
   box-sizing: border-box;
   width: 100%;
   padding: 6px 16px 20px 0px;
@@ -217,9 +215,7 @@ footer{
   background: rgb(62, 61, 59);
   height: 5vh;
   font-size: var(--font-sm);
-
 }
-
   #fname:hover{
       border-bottom-color: rgb(62, 61, 59);
       background: rgb(73, 73, 72);
@@ -272,4 +268,8 @@ footer{
 }
 #noButton:active{
   background-color: rgba(146, 168, 175, 0.205);
+}
+#desktopHeader {
+  padding: var(--space-4) 1em;
+
 }
