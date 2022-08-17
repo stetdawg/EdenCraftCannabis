@@ -310,7 +310,7 @@ draggable="false"
           }} 
       src={img11}/>
 
-    <a href="/" style={{gridArea:`2/2`,transform: 'translate(-60%, -50%)',
+    <a href="/" style={{gridArea:`2/2`,transform: 'translate(-50%, -50%)',
 }}>
     <img 
     draggable="false"
