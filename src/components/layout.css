@@ -77,6 +77,12 @@ div{
   }
 }
 
+@media only screen and (min-width: 699px){
+  #noButton > #centerButtonText {
+    font-size: xx-large;
+  }
+}
+
 @media only screen and (max-width: 799px){
 
  
@@ -91,16 +97,53 @@ div{
  
 } 
 @media only screen and (min-width: 800px) and (max-width: 1499px){
-html{
-  background-size: 100%, 70%
+  html{
+    background-size: 100%, 70%
+  }
+  .imageWrapper > div{
+    height: 3vh
+  }
+}
+@media only screen and (max-width: 1079px){
+  footer{
+    font-size: var(--font-sm);
+    padding: 0px 3vh;
+  }
+  #socialFooter > a > img{
+    height: 4vw
+  }
+  #fname{
+    font-size: x-small;
+  }
 }
 
-.imageWrapper > div{
-  height: 3vh
+
+@media only screen and (min-width: 1080px){
+  footer{
+    font-size: medium;
+    padding: 0 25%;
+  }
+  #socialFooter > a > img{
+    height: 2rem
+  }
+}
+@media only screen and (min-width: 1140px) and (max-width: 1199px){
+  .ageVerification{
+    transform: translate(-2%,0);
+  }
 }
 
-
+@media only screen and (min-width: 1200px) and (max-width: 1300px){
+  .ageVerification{
+    transform: translate(-3%,0);
+  }
 }
+@media only screen and (min-width: 1300px) {
+  .ageVerification{
+    transform: translate(-6%,0);
+  }
+}
+
 
 @media only screen and (min-width: 1500px){
   html{
@@ -116,6 +159,7 @@ html{
     align-self: center;
     -webkit-align-self: center;
   }
+
   .smoking{
     width: 60vw
 }
@@ -140,7 +184,6 @@ body {
 a {
   background-color: transparent;
   color: #F5F4ED;  
-  font-weight: 500;
   height: min-content;
   text-decoration: none;
 
@@ -163,6 +206,7 @@ h1 > b {
 img {
   border-style: none;
   max-width: 100%;
+
 }
 
 * {
@@ -188,6 +232,16 @@ p {
 
 footer{
   color: #F6F6EF;
+  background-color: rgb(62, 61, 59);
+  position: inherit;
+  bottom: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  font-family: "Arial Rounded MT Bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: initial;
 }
 .smoking{
   max-width: 60vw
@@ -207,14 +261,11 @@ footer{
   -webkit-align-self: flex-end;
   box-sizing: border-box;
   width: 100%;
-  padding: 6px 16px 20px 0px;
   transition:all 150ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   border-bottom: 1px solid;
   border-radius: 4px 4px 0 0;
   background: rgb(62, 61, 59);
-  height: 5vh;
-  font-size: var(--font-sm);
 }
   #fname:hover{
       border-bottom-color: rgb(62, 61, 59);
@@ -223,12 +274,10 @@ footer{
   #fname:focus{
       border-color: #6200ee;
   }
-#socialFooter > a > img{
-  height: 4vw
-}
+
 .ageVerification{
   bottom: 0;
-  position: sticky;
+  position: fixed;
   /* height: -webkit-fit-content; */
   height: -moz-fit-content;
   height: fit-content;
@@ -245,6 +294,7 @@ footer{
 
 .ageVerification > img {
   grid-column: 1/4;
+  grid-row: 1/5;
 }
 
 #yesButton{
@@ -268,6 +318,17 @@ footer{
 }
 #noButton:active{
   background-color: rgba(146, 168, 175, 0.205);
+}
+#noButton{
+  font-family: acumin-pro-extra-condensed;
+  font-weight: 400;
+  color: rgb(168, 178, 218);
+  letter-spacing: 0.3em;
+  overflow: visible;
+}
+#noButton > #centerButtonText {
+  transform: translate(10%, 0);
+  display: inline-block;
 }
 #desktopHeader {
   padding: var(--space-4) 1em;

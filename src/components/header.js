@@ -5,12 +5,12 @@ import edenlogo from "../images/logos/EDEN_HOMEPAGE_JULY_20_0002s_0001_ICON.png"
 
 
 const Links = [
-  {text:"Home", url: "/"},
-  {text:"Menu", url: "/"},
-  {text:"Shop", url: "/"},
+  {text:"Home", url: "#html"},
+  {text:"Menu", url: "#menu"},
+  {text:"Shop", url: "#locationsHeader"},
   {text:<img alt='Eden logo' height={50} style={{ margin: 0 }} src={edenlogo} />, url: "/"},
   {text:"Club", url: "/"},
-  {text:"About", url: "/"},
+  {text:"About", url: "#high"},
   {text:"More", url: "/"},
 
   

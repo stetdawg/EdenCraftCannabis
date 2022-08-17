@@ -9,7 +9,7 @@ import img3 from "../images/EDEN_HOMEPAGE_JULY_20_0001s_0004_its-420-somewhere.p
 import img4 from "../images/logos/EDEN_HOMEPAGE_JULY_20_0005s_0002_grey-circle.png";
 import img5 from "../images/logos/EDEN_HOMEPAGE_JULY_20_0001s_0001_high.png";
 import img6 from "../images/logos/EDEN_HOMEPAGE_JULY_20_0005s_0001_leafly-logo.png";
-import img7 from "../images/EDEN_HOMEPAGE_JULY_20_0001s_0003_Welcome-to-Eden-Cannabis.-We-are-a-women-owned-and-operated-col.png";
+import img7 from "../images/text small.png";
 import img8 from "../images/logos/EDEN_HOMEPAGE_JULY_20_0001s_0002_locations.png";
 import img9 from "../images/logos/EDEN_HOMEPAGE_JULY_20_0006s_0000_ICON.png"
 import img10 from "../images/EDEN_HOMEPAGE_JULY_20_0001s_0000_location-blob.png";
@@ -96,11 +96,11 @@ const IndexPage = () => (
     <Seo title="Home" />
 
     <div id="ageGate" className={`ageVerification`}>
-            <img src={ageGateimg} alt="Age Gate 21 years or older" />
-            
-                <button id="yesButton" ><img src={yesButton} alt="Yes to Enter" onClick={Gate} ></img></button>
-                    <a id="noButton" href="https://www.google.com" style={{fontFamily:`acumin-pro-extra-condensed`, fontWeight:`400`, fontStyle:`uppercase`, color:`#a8b2da`, fontSize:`xx-large`, textTransform:`capitalize`, letterSpacing: `.5em`,  transform: `translate(7%, 0)`,}}>
-                     <></>NO NOT YET...
+            <img draggable="false" src={ageGateimg} alt="Age Gate 21 years or older" />
+               <button id="yesButton" ><img draggable="false" src={yesButton} 
+             alt="Yes to Enter" onClick={Gate} ></img></button>
+                    <a id="noButton" href="https://www.google.com" >
+                     <span id="centerButtonText">NO NOT YET...</span>
                   </a>
                     </div>
         
@@ -121,18 +121,20 @@ const IndexPage = () => (
   <div style={{display:"grid", position:`relative`, gridArea:`1/1`, width:`max-content`, marginTop: `2em`,}}>
 
     <img 
+draggable="false"
       className={`fourtwentysomewhere`} 
       alt='Hero 3' 
       style={{ 
         position: `absolute`,
         gridArea: `1/1/1/1`,
         justifySelf: `end`,
-        transform: `translate(15%,0)`,
+        transform: `translate(15%,10%)`,
         width: `60%`,
         height:`auto`,
          }} 
       src={img3}/>
     <img 
+    draggable="false"
       className={`smoking`} 
       alt='Hero 1' 
       height={936} 
@@ -145,7 +147,9 @@ const IndexPage = () => (
     }} 
       src={img1}/>
          <img 
+         draggable="false"
       className={`high`} 
+      id={`high`} 
       alt='Hero 5' 
       height={42} 
       style={{ 
@@ -165,7 +169,9 @@ const IndexPage = () => (
 
 <a href="/">
     <img 
+    draggable="false"
       className={`greyCircle`} 
+      id={`menu`}
       alt='Hero 4' 
       height={328} 
       style={{ 
@@ -178,6 +184,7 @@ const IndexPage = () => (
       src={img4}>
     </img>   </a>
     <img 
+    draggable="false"
       className={`leaflyLogo`} 
       alt='Hero 6' 
       height={47} 
@@ -200,6 +207,7 @@ const IndexPage = () => (
   <div id="box3" style={{display:"grid", gridTemplateColumns:`auto auto`, gridAutoRows:`auto`,alignItems:`flex-end`,WebkitAlignItems:`flex-end`, justifyItems:`center`,marginTop: `10%`}}>
  
     <img 
+    draggable="false"
       className={`rolling`} 
       alt='Hero 2' 
       height={838} 
@@ -220,6 +228,7 @@ const IndexPage = () => (
 
 }}>
     <img 
+    draggable="false"
       className={`copyText`} 
       alt='Hero 7' 
       height={498} 
@@ -233,6 +242,7 @@ const IndexPage = () => (
           }} 
       src={img7}/>
     <img 
+    draggable="false"
       className={`icon`} 
       alt='Hero 9' 
       height={63} 
@@ -251,6 +261,8 @@ const IndexPage = () => (
     
     <img 
       className={`locationsHeader`} 
+      id={`locationsHeader`} 
+      draggable="false"
       alt='Hero 8' 
       height={64} 
       style={{ 
@@ -268,7 +280,9 @@ const IndexPage = () => (
 
 
     <img 
+    draggable="false"
       className={`locations`} 
+      id={`locations`}
       alt='Hero 10' 
       height={64} 
       style={{ 
@@ -285,6 +299,7 @@ const IndexPage = () => (
       src={img10}/>
 
     <img 
+    draggable="false"
       className={`smile`} 
       alt='Hero 11' 
       height={1407} 
@@ -302,6 +317,7 @@ const IndexPage = () => (
     <a href="/" style={{gridArea:`2/2`,transform: `translate(-30%,-100%)`,
 }}>
     <img 
+    draggable="false"
       className={`contactButton`} 
       alt='Hero 12' 
       height={140} 
