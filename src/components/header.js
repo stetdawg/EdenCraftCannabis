@@ -8,7 +8,15 @@ const Links = [
   {text:"Home", url: "#html"},
   {text:"Menu", url: "#menu"},
   {text:"Shop", url: "#locationsHeader"},
-  {text:<img alt='Eden logo' height={50} style={{ margin: 0 }} src={edenlogo} />, url: "/"},
+  {text:<img 
+    alt='Eden logo' 
+    height={50} 
+    style={{ 
+    margin: '0',
+    height: 'auto',
+    maxWidth: '60%'}} 
+    src={edenlogo} />,
+  url: "/"},
   {text:"Club", url: "/"},
   {text:"About", url: "#high"},
   {text:"More", url: "/"},
@@ -19,7 +27,8 @@ const Links = [
 
 const Header = ({ siteTitle }) => (
   <header
-   id="desktopHeader" style={{
+   id="desktopHeader" 
+   style={{
       margin: `0 auto`,
       alignItems: `center`,
       WebkitAlignItems: `center`,
@@ -27,28 +36,29 @@ const Header = ({ siteTitle }) => (
       WebkitJustifyContent: `space-between`,
       backgroundColor:`#3E3E3E`, 
       fontSize: `2.3vh`,
-
-    }}
-  >
-<div id="navBar" style={{listStyleType: `none`, display:`flex`, justifyContent:`space-around`, WebkitJustifyContent: `space-around`,alignItems:`center`, WebkitAlignItems:`center`}}>
-
+  }}>
+  <div id="navBar" style={{
+    listStyleType: `none`, 
+    display:`flex`, 
+    justifyContent:`space-around`, 
+    WebkitJustifyContent: `space-around`,
+    alignItems:`center`, 
+    WebkitAlignItems:`center`
+  }}>
 
   {Links.map((link, i) => (
           <React.Fragment key={link.url}>
             <Link to={link.url}>{link.text}</Link>
           </React.Fragment>
         ))}</div>
-    <Link
-      to="/"
-      style={{
-
-        textDecoration: `none`,
-      }}
-    >
-    </Link>
-
+  <Link
+    to="/"
+    style={{
+      textDecoration: `none`,
+    }}>
+  </Link>
   </header>
-)
+  )
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
