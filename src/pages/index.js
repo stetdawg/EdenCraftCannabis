@@ -292,7 +292,7 @@ It’s 4:20 Somewhere!
         position: `relative`,
         alignSelf: `flex-start`,
         WebkitAlignSelf: `flex-start`,
-        maxWidth: `50%`,
+        maxWidth: `70%`,
         height: `auto`,
         transform: `translate(0%,-20%)`,
         top:`0`, 
