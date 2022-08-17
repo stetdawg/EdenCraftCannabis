@@ -1,3 +1,12 @@
+@font-face {font-family: "DINNextLTPro-Heavy";
+  src: url("../fonts/1f83f5c8497875fdc52c54ee78331a55.eot"); /* IE9*/
+  src: url("../fonts/1f83f5c8497875fdc52c54ee78331a55.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/1f83f5c8497875fdc52c54ee78331a55.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/1f83f5c8497875fdc52c54ee78331a55.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/1f83f5c8497875fdc52c54ee78331a55.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/1f83f5c8497875fdc52c54ee78331a55.svg#DINNextLTPro-Heavy") format("svg"); /* iOS 4.1- */
+}
+
 :root {
   --border-radius: 4px;
   --color-text: #333;
@@ -65,7 +74,45 @@ html {
 div{
   height: fit-content
 }
+@media only screen and (max-width: 399px){
+  #copyText{
+    font-size: xx-small;  
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 599px){
+  #copyText{
+    font-size: x-small;  
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 699px){
+  #copyText{
+    font-size: small;  
+  }
+}
 
+@media only screen and (min-width: 700px) and (max-width: 899px){
+  #copyText{
+    font-size: large;  
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1079px){
+  #copyText{
+    font-size: x-large;  
+  }
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1440px) {
+  #copyText{
+    font-size: x-large;
+    padding-right: 15%;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  #copyText{
+    font-size: xx-large;
+    padding-right: 15%;
+  }
+}
 
 
 @media only screen and (max-width: 699px){
@@ -103,8 +150,10 @@ div{
   .imageWrapper > div{
     height: 3vh
   }
+ 
 }
 @media only screen and (max-width: 1079px){
+
   footer{
     font-size: var(--font-sm);
     padding: 0px 3vh;
@@ -115,6 +164,7 @@ div{
   #fname{
     font-size: 1em;
   }
+  
 }
 
 
@@ -126,25 +176,8 @@ div{
   #socialFooter > a > img{
     height: 2rem
   }
-}
-@media only screen and (min-width: 1140px) and (max-width: 1199px){
-  .ageVerification{
-    transform: translate(-2%,0);
-  }
-}
 
-@media only screen and (min-width: 1200px) and (max-width: 1300px){
-  .ageVerification{
-    transform: translate(-3%,0);
-  }
 }
-@media only screen and (min-width: 1300px) {
-  .ageVerification{
-    transform: translate(-6%,0);
-  }
-}
-
-
 @media only screen and (min-width: 1500px){
   html{
     background-size: 100%, 70%
@@ -155,18 +188,12 @@ div{
   #box1 {
     margin-top: 15vh
   }
-  .copyText{
-    align-self: center;
-    -webkit-align-self: center;
-  }
-
   .smoking{
     width: 60vw
-}
-.rolling{
- width: max-content;
-}
-
+  }
+  .rolling{
+  width: max-content;
+  }
 }
 
 body {
@@ -228,6 +255,16 @@ p {
 
 .imageWrapper{
     margin: auto var(--size-gutter);
+  }
+
+  #copyText{
+    font-family:"DINNextLTPro-Heavy" !important;
+    -webkit-font-smoothing: antialiased;
+    text-align: left;
+    margin: 0% 15% 0% 10%   ;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    
   }
 
 footer{

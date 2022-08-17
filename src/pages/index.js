@@ -211,9 +211,12 @@ draggable="false"
       height={838} 
       style={{ 
         position: `relative`,
+        alignSelf: 'baseline',
+        WebkitAlignSelf:`baseline`,
         gridArea:`1/2`,
         justifySelf: `end`,
         height: `auto`,
+        marginLeft: `5vmax`,
         top:`0`,
         left:`0`,
         float:`left`,
@@ -225,20 +228,24 @@ draggable="false"
    <div style={{width:`100%`, alignSelf: `flex-start`, WebkitAlignSelf: `flex-start`, gridArea: `1/1`, display:`flex`, flexDirection:`column`,
 
 }}>
-    <img 
-    draggable="false"
-      className={`copyText`} 
-      alt='Hero 7' 
-      height={498} 
-      style={{ 
-        position: `relative`,
-        height: `auto`,
-        padding: `0 10%`,
-        width: '80%',
-        top:`0`, 
-        zIndex:`499`,
-          }} 
-      src={img7}/>
+    <p id={`copyText`}>
+    Welcome To Eden Cannabis. We
+Are A Women Owned And
+Operated Collection Of
+Dispensaries That Are
+Passionate About The Plant
+And Bringing People Together.
+We Focus On Supporting Local
+Communities, Creating
+Outreach Programs, Education,
+And Providing Safe Access
+To Quality Products In A Relaxing
+Environment. Come Visit Any Of
+Our Four Locations In The
+Portland, Oregon Area For An
+Unforgettable Canna-Experience.<br/>
+It’s 4:20 Somewhere!
+    </p>
     <img 
     draggable="false"
       className={`icon`} 
