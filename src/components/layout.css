@@ -257,7 +257,7 @@ display: flex;
 }
 .ageVerification{
   bottom: 0;
-  position: fixed;
+  position: sticky;
   /* height: -webkit-fit-content; */
   height: -moz-fit-content;
   height: fit-content;
