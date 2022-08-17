@@ -263,13 +263,14 @@ p {
     text-align: left;
     margin: 0% 15% 0% 10%   ;
     -webkit-text-stroke-width: 0.2px;
+    color: #3e3d3b;
     -moz-osx-font-smoothing: grayscale;
     
   }
 
 footer{
   color: #F6F6EF;
-  background-color: rgb(62, 61, 59);
+  background-color: #3e3d3b;
   position: inherit;
   bottom: 0px;
 display: flex;
