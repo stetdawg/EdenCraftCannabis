@@ -310,7 +310,7 @@ draggable="false"
           }} 
       src={img11}/>
 
-    <a href="/" style={{gridArea:`2/2`,transform: `translate(-30%,-100%)`,
+    <a href="/" style={{gridArea:`2/2`,transform: 'translate(-60%, -50%)',
 }}>
     <img 
     draggable="false"
@@ -318,11 +318,9 @@ draggable="false"
       alt='Hero 12' 
       height={140} 
       style={{ 
-        position: `relative`,
         maxWidth: `100%`,
         height: `auto`,
-        alignSelf:`flex-end`,
-        WebkitAlignSelf: `flex-end`,
+        
         top:`0`, 
         zIndex:`505`,
           }} 
