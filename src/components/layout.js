@@ -105,6 +105,7 @@ const Layout = ({ children }) => {
             gridColumn: '1 / 3',
             width: '50%',
             height: 'fit-content',
+            marginTop: `10px`,
             justifySelf: 'center',
             justifyContent: 'space-evenly',
             WebkitJustifyContent: `space-evenly`}}>
