@@ -60,32 +60,47 @@ const Layout = ({ children }) => {
 
       </div>
       <footer>
-
-
-        <img
+      <img
         draggable="false"
           src={edenlogo}
           alt="Eden Logo"
           height={65}
-          style={{ margin: 0,  gridArea: `1/1`, width: `10%`, height:`auto`, alignSelf:`center`, WebkitAlignSelf:`center`, justifySelf:`baseline` }}
+          style={{ 
+          margin: 0,
+          width:`3em`,
+          height:`100%`,
+          transform: `translate(-50%, 0)`,
+        }}
         />
-        <div style={{gridArea:`1/1`, display:`flex`, flexDirection:`column`, alignSelf:`center`, WebkitAlignSelf:`center`, textAlign:`initial`, justifySelf:`baseline`, transform: `translate(100%, 0%)`,}}>
+      <div id={`footerContainer`}>
+           
+        <div style={{
+          gridArea:`1/1`, 
+          display:`flex`, 
+          flexDirection:`column`, 
+          textAlign:`initial`,
+          alignItems:`baseline`,
+          WebkitAlignItems:`baseline`, 
+          }}>
         {moreLinks.map((link, i) => (
           <React.Fragment key={link.url}>
             <a href={`${link.url}`}>{link.text}</a>
             {i !== moreLinks.length - 1 && <></>}
           </React.Fragment>
         ))}
-        </div>
 
-        <div style={{gridArea:`2/1`,paddingRight:`10%`, textAlign:`initial`, fontSize:`smaller` }}>
+        <div style={{marginTop:`5%`, textAlign:`initial`, fontSize:`smaller`, paddingRight:`3%`, }}>
             LICENSE NUMBER HERE{` `}<br/>
             Eden Craft Cannabis Terms & Conditions & Privacy Policy<br/>
         </div> 
+
+        </div>
+
+     
           
         <div style={{alignItems:`baseline`, WebkitAlignItems:`baseline`,display: "flex", flexDirection:"column", justifySelf: 'flex-start', }}>
             <h1
-                style={{gridArea:`1/2`, margin: `1% 0 1% 0`, float: `left`, alignItems:`baseline`, WebkitAlignItems: `baseline`}}
+                style={{gridArea:`1/2`, margin: `0`, float: `left`, alignItems:`baseline`, WebkitAlignItems: `baseline`}}
             >
                 Keep In Touch
           </h1>
@@ -94,10 +109,20 @@ const Layout = ({ children }) => {
               >
                 Keep your inbox happy filled with event invitations, new product releases, and occasional sales.
                 </p>
-          </div>
-            
-        <div>
-          <input placeholder="Your Email Address..." type="text" id="fname" name="fname" style={{float: `left`}}/><br/>
+
+               <div id={`emailCapture`}> 
+                  <input 
+                      placeholder="Your Email Address..." 
+                      type="text" 
+                      id="fname" 
+                      name="fname" 
+                      style={{
+                          float: `left`
+                          }}/>
+                  <button id={`submit`}> SUBMIT</button>  
+                  <br/>
+                </div>
+
           </div>
 
         <div id="socialFooter" style={{
@@ -105,7 +130,7 @@ const Layout = ({ children }) => {
             gridColumn: '1 / 3',
             width: '50%',
             height: 'fit-content',
-            marginTop: `10px`,
+            margin: `10px 0`,
             justifySelf: 'center',
             justifyContent: 'space-evenly',
             WebkitJustifyContent: `space-evenly`}}>
@@ -149,11 +174,12 @@ const Layout = ({ children }) => {
 
             /> </a>    
         </div>
-          
-        <div style={{justifySelf:`end`,gridColumn:`2/3` }}>
+{/*           
+        <div style={{justifySelf:`end`, padding:`5%`}}>
           © {new Date().getFullYear()}
-          </div>
-        </footer>
+          </div> */}
+      </div>
+</footer>
     </>
   )
 }

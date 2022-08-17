@@ -22,7 +22,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
-
 const links = [
   {
     text: "Roseway Location",
@@ -68,7 +67,6 @@ const samplePageLinks = [
   { text: "Server Side Rendering", url: "using-ssr" },
   { text: "Deferred Static Generation", url: "using-dsg" },
 ]
-
 
 const keepInTouch = [
   { text: "Keep In Touch" },
@@ -276,8 +274,6 @@ draggable="false"
         zIndex:`502`,
           }} 
       src={img8}/>
-
-
 
     <img 
     draggable="false"
