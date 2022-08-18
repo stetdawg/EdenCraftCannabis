@@ -42,7 +42,8 @@ const Header = ({ siteTitle }) => (
     justifyContent:`space-around`, 
     WebkitJustifyContent: `space-around`,
     alignItems:`center`, 
-    WebkitAlignItems:`center`
+    WebkitAlignItems:`center`,
+    letterSpacing: `.5px`
   }}>
 
   {Links.map((link, i) => (
