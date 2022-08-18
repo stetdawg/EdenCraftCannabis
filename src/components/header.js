@@ -14,7 +14,8 @@ const Links = [
     style={{ 
     margin: '0',
     height: 'auto',
-    maxWidth: '60%'}} 
+    maxWidth: '60%',
+    minWidth: `30px`}} 
     src={edenlogo} />,
   url: "/"},
   {text:"Club", url: "/ss"},
