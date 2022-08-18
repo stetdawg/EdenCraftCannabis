@@ -94,7 +94,7 @@ const IndexPage = () => (
     <Seo title="Home" />
 
     <div id="ageGate" className={`ageVerification`}>
-            <img draggable="false" src={ageGateimg} alt="Age Gate 21 years or older" />
+            {/* <img draggable="false" src={ageGateimg} alt="Age Gate 21 years or older" /> */}
                <button id="yesButton" ><img draggable="false" src={yesButton} 
              alt="Yes to Enter" onClick={Gate} ></img></button>
                     <a id="noButton" href="https://www.google.com" >

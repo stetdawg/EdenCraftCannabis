@@ -296,9 +296,7 @@ display: flex;
 .ageVerification{
   bottom: 0;
   position: sticky;
-  /* height: -webkit-fit-content; */
-  height: -moz-fit-content;
-  height: fit-content;
+height: 50vw;
   display: inline-grid;
   /* float: right; */
   top: 0;
@@ -308,18 +306,24 @@ display: flex;
   grid-template-rows: 60% 14% 10% 16%;
   grid-template-columns: 15% 68% 17%;
   z-index: 999;
+  width: 70%;
+background-image: url("../images/Background/21_POPUP.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
 }
 
-.ageVerification > img {
+/* .ageVerification > img {
   grid-column: 1/4;
   grid-row: 1/5;
-}
+} */
 
 #yesButton{
   grid-area: 2 / 2 / auto / auto;
   min-width: 0px;
   min-height: 0px;
   overflow: hidden;
+  width: 100%;
   border-style: none;
   background-color: transparent;
 }

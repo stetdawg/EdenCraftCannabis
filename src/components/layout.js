@@ -99,11 +99,11 @@ const Layout = ({ children }) => {
      
           
         <div style={{alignItems:`baseline`, WebkitAlignItems:`baseline`,display: "flex", flexDirection:"column", justifySelf: 'flex-start', }}>
-            <h1
+            <p
                 style={{gridArea:`1/2`, margin: `0`, float: `left`, alignItems:`baseline`, WebkitAlignItems: `baseline`}}
             >
                 Keep In Touch
-          </h1>
+          </p>
             <p
                 style={{height:`auto`,  fontFamily:`Arial Rounded MT Bold, sans-serif`, fontSize: `80%`, textAlign: `-webkit-left`,}}
               >

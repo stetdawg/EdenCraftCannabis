@@ -35,7 +35,6 @@ const Header = ({ siteTitle }) => (
       justifyContent: `space-between`,
       WebkitJustifyContent: `space-between`,
       backgroundColor:`#3E3E3E`, 
-      fontSize: `2.3vh`,
   }}>
   <div id="navBar" style={{
     listStyleType: `none`, 
