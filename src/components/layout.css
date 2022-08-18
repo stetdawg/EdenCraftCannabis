@@ -140,7 +140,9 @@ div{
   /* .rolling{
     transform: translate(0%, -60%)
   } */
-
+  #navBar a{
+    font-size: small;
+  }
  
 } 
 @media only screen and (min-width: 800px) and (max-width: 1499px){
@@ -191,7 +193,9 @@ div{
   width: max-content;
   }
 }
-
+#navBar a{
+  margin: 0 5px;
+}
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
