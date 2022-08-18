@@ -158,9 +158,7 @@ div{
     font-size: var(--font-sm);
     padding: 0px 3vh;
   }
-  #socialFooter > a > img{
-    height: 4vw
-  }
+
   #fname{
     font-size: 1em;
   }
@@ -173,9 +171,7 @@ div{
     font-size: medium;
     padding: 0 25%;
   }
-  #socialFooter > a > img{
-    height: 2rem
-  }
+
 
 }
 @media only screen and (min-width: 1500px){
@@ -268,25 +264,6 @@ p {
     
   }
 
-footer{
-  color: #F6F6EF;
-  background-color: #3e3d3b;
-  position: inherit;
-  bottom: 0px;
-display: flex;
-  font-family: "Arial Rounded MT Bold", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  line-height: initial;
-  padding-top: 5%;
-  letter-spacing: 1.6px;
-  margin-top: 5%;
-}
-#footerContainer{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, auto);
-}
 .smoking{
   max-width: 60vw
 }
@@ -354,23 +331,49 @@ background-position: center;
 }
 #desktopHeader {
   padding: var(--space-4) 1em;
-}
+  font-family: "Arial Rounded MT Bold", sans-serif;
 
+}
+footer{
+  color: #F6F6EF;
+  background-color: #3e3d3b;
+  position: inherit;
+  bottom: 0px;
+display: flex;
+  font-family: "Arial Rounded MT Bold", sans-serif;
+  font-style: normal;
+  line-height: initial;
+  padding-top: 5%;
+  letter-spacing: .5px;
+  margin-top: 5%;
+}
+#footerContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+#socialFooter > a > img{
+  height: 2vmin
+}
 #emailCapture{
   border-bottom: 1px solid;
   border-radius: 4px 4px 0 0;
   border-bottom-color: rgba(255, 255, 255, 0.42);
   align-self: flex-start;
   -webkit-align-self: flex-start;
-
+  width: 100%;
   box-sizing: border-box;
 
   display: flex;
-}
+} div#emailCapture button#submit{
+    font-weight: 600;
+  }
+
+
   #fname{
     color: #F6F7F1;
-    font-weight: 600;
     letter-spacing: .009375em;
+    
     text-decoration: inherit;
     text-transform: uppercase;
     text-align: start;
@@ -394,3 +397,5 @@ background-position: center;
         letter-spacing: unset;
         font-size: inherit;
       }
+
+      

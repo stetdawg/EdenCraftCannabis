@@ -17,9 +17,9 @@ const Links = [
     maxWidth: '60%'}} 
     src={edenlogo} />,
   url: "/"},
-  {text:"Club", url: "/"},
+  {text:"Club", url: "/ss"},
   {text:"About", url: "#high"},
-  {text:"More", url: "/"},
+  {text:"More", url: "/s"},
 
   
 ]    

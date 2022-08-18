@@ -98,27 +98,37 @@ const Layout = ({ children }) => {
 
      
           
-        <div style={{alignItems:`baseline`, WebkitAlignItems:`baseline`,display: "flex", flexDirection:"column", justifySelf: 'flex-start', }}>
+        <div style={{
+          alignItems:`baseline`, 
+          WebkitAlignItems:`baseline`,
+          display: "flex", 
+          fontFamily:"inherit",
+          textAlign:`left`, 
+          flexDirection:"column", 
+          justifySelf: 'flex-start', }}>
             <p
-                style={{gridArea:`1/2`, margin: `0`, float: `left`, alignItems:`baseline`, WebkitAlignItems: `baseline`}}
-            >
-                Keep In Touch
-          </p>
+              style={{ 
+                margin: `0`, 
+                float: `left`, 
+                fontSize: `1.5em`
+            }}>
+              Keep In Touch
+            </p>
             <p
-                style={{height:`auto`,  fontFamily:`Arial Rounded MT Bold, sans-serif`, fontSize: `80%`, textAlign: `-webkit-left`,}}
-              >
-                Keep your inbox happy filled with event invitations, new product releases, and occasional sales.
-                </p>
+              style={{
+                height:`auto`, 
+                fontSize: `80%`, 
+                textAlign: `-webkit-left`,
+            }}>
+              Keep your inbox happy filled with event invitations, new product releases, and occasional sales.
+            </p>
 
                <div id={`emailCapture`}> 
                   <input 
                       placeholder="Your Email Address..." 
                       type="text" 
                       id="fname" 
-                      name="fname" 
-                      style={{
-                          float: `left`
-                          }}/>
+                      name="fname" />
                   <button id={`submit`}> SUBMIT</button>  
                   <br/>
                 </div>
@@ -128,7 +138,7 @@ const Layout = ({ children }) => {
         <div id="socialFooter" style={{
             display: 'flex',
             gridColumn: '1 / 3',
-            width: '50%',
+            width: '25%',
             height: 'fit-content',
             margin: `10px 0`,
             justifySelf: 'center',
