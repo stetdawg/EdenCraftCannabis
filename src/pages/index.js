@@ -17,7 +17,11 @@ import img11 from "../images/EDEN_HOMEPAGE_JULY_20_0003s_0000_smile-photo.png";
 import img12 from "../images/EDEN_HOMEPAGE_JULY_20_0005s_0000_CONTACT-US.png";
 import ageGateimg from '../images/Background/21_POPUP.png';
 import yesButton from '../images/yes.png';
-
+import location5 from "../images/location_buttons_0000_Layer-5.png";
+import location4 from "../images/location_buttons_0001_Layer-4.png";
+import location3 from "../images/location_buttons_0002_Layer-3.png";
+import location2 from "../images/location_buttons_0003_Layer-2.png";
+import location1 from "../images/location_buttons_0004_Layer-1.png";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
@@ -122,14 +126,6 @@ const IndexPage = () => (
 draggable="false"
       className={`fourtwentysomewhere`} 
       alt='Hero 3' 
-      style={{ 
-        position: `absolute`,
-        gridArea: `1/1/1/1`,
-        justifySelf: `end`,
-        transform: `translate(15%,10%)`,
-        width: `60%`,
-        height:`auto`,
-         }} 
       src={img3}/>
     <img 
     draggable="false"
@@ -282,24 +278,56 @@ It’s 4:20 Somewhere!
           }} 
       src={img8}/>
 
-    <img 
-    draggable="false"
+    <div 
       className={`locations`} 
       id={`locations`}
-      alt='Hero 10' 
-      height={64} 
-      style={{ 
-        position: `relative`,
-        alignSelf: `flex-start`,
-        WebkitAlignSelf: `flex-start`,
-        maxWidth: `70%`,
-        height: `auto`,
-        transform: `translate(0%,-20%)`,
-        top:`0`, 
-        gridArea:`2/2`,
-        zIndex:`504`,
-          }} 
-      src={img10}/>
+      alt='Hero 10'> 
+        <a 
+        draggable="false"
+        href="https://www.leafly.com/dispensary-info/roseway-organics">
+          <img
+            draggable="false" 
+            src={location1} 
+            alt="Roseway Location" 
+            />
+        </a>
+        <a 
+        draggable="false"
+        href="https://www.leafly.com/dispensary-info/eden-cannabis-holman-road">
+          <img
+            draggable="false" 
+            src={location2} 
+            alt="Salem Location" 
+            />
+        </a>
+        <a             
+          draggable="false" 
+          href="https://www.leafly.com/dispensary-info/eden-craft-cannabis">
+          <img
+            draggable="false"           
+            src={location3} 
+            alt="Buckman Location" 
+            />
+        </a>
+        <a 
+        draggable="false"         
+        href="https://www.leafly.com/dispensary-info/eden-craft-cannabis---se-12th">
+          <img
+            draggable="false" 
+            src={location4} 
+            alt="Foster Location" 
+            />
+        </a>
+        <a 
+        draggable="false"
+        href="https://www.leafly.com/dispensary-info/eden-craft-cannabis---60th-st-">
+          <img
+            draggable="false" 
+            src={location5} 
+            alt="PDX Location" 
+            />
+        </a>
+      </div>
 
     <img 
     draggable="false"
